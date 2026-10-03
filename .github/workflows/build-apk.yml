@@ -18,7 +18,7 @@ jobs:
         run: |
           rm -rf source
           mkdir -p source
-          unzip -q PocketChessLog-v0.1.1-source.zip -d source
+          unzip -q PocketChessLog-v0.1.2-source.zip -d source
 
       # ChessView가 Android View의 setEnabled(Boolean)과 충돌하는 문제 수정
       - name: Fix ChessView enabled collision
