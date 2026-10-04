@@ -18,7 +18,7 @@ jobs:
         run: |
           rm -rf source
           mkdir -p source
-          unzip -q PocketChessLog-v1.1.7-source.zip -d source
+          unzip -q PocketChessLog-v1.1.8-source.zip -d source
 
       - name: Set up Java 17
         uses: actions/setup-java@v5
@@ -48,7 +48,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: PocketChessLog-v1.1.7-debug-apk
+          name: PocketChessLog-v1.1.8-debug-apk
           path: source/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
           retention-days: 30
